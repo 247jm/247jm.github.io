@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/Otani.css">
+	<link rel="stylesheet" href="media.css">
+	<link rel="stylesheet" type="text/css" href="slick.css">
+	<link rel="stylesheet" type="text/css" href="slick-theme.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="slick.min.js"></script>
+	<script type="text/javascript" src="slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+	<script type="text/javascript" src="jquery.lazyload.min.js"></script>
+	<!-- <script src="lazyload.min.js"></script> -->
+
+	<script>
+		$(function(){
+			// #で始まるリンクをクリックしたら実行されます
+			$('a[href^="#"]').click(function() {
+				// スクロールの速度
+				let speed = 400; // ミリ秒で記述
+				let href= $(this).attr("href");
+				let target = $(href == "#" || href == "" ? 'html' : href);
+				let position = target.offset().top;
+				$('body,html').animate({scrollTop:position}, speed, 'swing');
+				return false;
+			});
+		});
+	</script>
+
+	<title>fleuriste Otani</title>
+</head>
+
+<body>
+	<header id="top">
+		<div class="header-contents">
+			<div class="header-box">
+				<div class="header-left">
+					<p>高野山のお花屋さん</p>
+					<a href="#top"><img class="logo" src="assets/大谷生花店logo.png"></a>
+				</div>
+
+				<div class="header-right">
+					<ul>
+						<li><a href="#about"><img src="assets/nav_01.png"></a></li>
+						<li><a href="#service"><img src="assets/nav_02.png"></a></li>
+						<li><a href="#news"><img src="assets/nav_03.png"></a></li>
+						<li><a href="#shopinfo"><img src="assets/nav_04.png"></a></li>
+						<li><a href="#"><img src="assets/nav_05.png"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<button class="menu-trigger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+	
+			<div class="header-nav">
+				<ul>
+					<li><a href="#about"><img src="assets/nav_01.png"></a></li>
+					<li><a href="#service"><li><img src="assets/nav_02.png"></a></li>
+					<li><a href="#news"><li><img src="assets/nav_03.png"></a></li>
+					<li><a href="#shopinfo"><li><img src="assets/nav_04.png"></a></li>
+					<li><a href="#"><li><img src="assets/nav_05.png"></li></a>
+				</ul>
+			</div>
+		</div>
+	</header>
+	 
+	<div class="sec_inner down-to-top">
+		<div class="slider">   
+			<div><img src="assets/main_01.jpg"></div>
+			<div><img src="assets/main_02.jpg"></div>   
+			<div><img src="assets/main_03.jpg"></div>
+		</div>
+	</div>
+
+	<div id="about" class="about-wrapper down-to-top">
+		<div class="about-top">
+			<h2>元気な花屋さん</h2>
+			<h5>about</h5>
+		</div>
+
+		<div class="about-main">
+			<p class="about-jpn">「高野山で、元気な姉妹がきりもりしてるお花屋さん」</p>
+			<p class="about-eng">"A flower shop with energetic sisters on Mt. Koya"</p>
+			<p class="about-jpn">高野山で育ったわたしたち姉妹は、このお花屋さんがお家であり、</p>
+			<p class="about-eng">Our sisters who grew up on Mt. Koya have this flower shop as their home.</p>
+			<p class="about-jpn">大切な場所です。</p>
+			<p class="about-eng">It's an important place.</p>
+			<p class="about-jpn">そんなお店で、たくさんの方にうちのお花を見て</p>
+			<p class="about-eng">At such a shop, many people see our flowers</p>
+			<p class="about-jpn">元気になってもらいたいです。</p>
+			<p class="about-eng">I want you to be well.</p>
+			<p class="about-jpn">奥の院へのお参りのお花、花束やアレンジ、生け花などご提供しております。</p>
+			<p class="about-eng">We offer flowers for visiting Okuin, bouquets and arrangements, and flower arrangement.</p>
+		</div>
+
+		<div class="about-main-mini">
+			<p class="about-jpn">「高野山で、元気な姉妹がきりもりしてるお花屋さん」</p>
+			<p class="about-eng">"A flower shop with energetic sisters on Mt. Koya"</p>
+			<p class="about-jpn">高野山で育ったわたしたち姉妹は、</p>
+			<p class="about-eng">Our sisters who grew up on Mt. Koya</p>
+			<p class="about-jpn">大切な場所です。</p>
+			<p class="about-jpn">このお花屋さんがお家であり、</p>
+			<p class="about-eng">have this flower shop as their home.</p>
+			<p class="about-jpn">大切な場所です。</p>
+			<p class="about-eng">It's an important place.</p>
+			<p class="about-jpn">そんなお店で、たくさんの方にうちのお花を見て</p>
+			<p class="about-eng">At such a shop, many people see our flowers</p>
+			<p class="about-jpn">元気になってもらいたいです。</p>
+			<p class="about-eng">I want you to be well.</p>
+			<p class="about-jpn">奥の院へのお参りのお花、花束やアレンジ、</p>
+			<p class="about-eng">We offer flowers for visiting Okuin, bouquets</p>
+			<p class="about-jpn">生け花などご提供しております。</p>
+			<p class="about-eng">and arrangements, and flower arrangement.</p>
+		</div>
+
+	</div>
+	
+	<div class="service-wrapper down-to-top">
+		<div id="service" class="service-top">
+			<h2>やっていること</h2>
+			<h5>service</h5>
+		</div>
+
+		<div class="servicebox">
+			<div class="service-1">
+				<div class="service1-left">
+					<img class="lazy" data-original="assets/servis_01.png">
+				</div>
+
+				<div class="service1-right">
+					<h3>花束アレンジ</h3>
+					<p>季節ごとに色々なお花を取り揃えております。冠婚葬祭やお家での飾りなど、シーンに合わせてお選び致します。</p>
+				</div>
+			</div>
+
+			<div class="service-2">
+				<div class="service2-left">
+					<img class="lazy" data-original="assets/servis_02.png">
+				</div>
+
+				<div class="service2-right">
+					<h3>お寺へのお参り</h3>
+					<p>季節ごとに色々なお花を取り揃えております。冠婚葬祭やお家での飾りなど、シーンに合わせてお選び致します。</p>
+				</div>
+			</div>
+
+			<div class="service-3">
+				<div class="service3-left">
+					<img class="lazy" data-original="assets/servis_03.png">
+				</div>
+
+				<div class="service3-right">
+					<h3>生け花</h3>
+					<p>季節ごとに色々なお花を取り揃えております。冠婚葬祭やお家での飾りなど、シーンに合わせてお選び致します。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="news" class="news-wrapper down-to-top">
+		<div class="news-top">
+			<h2>できごと</h2>
+			<h5>news</h5>
+		</div>
+
+		<div class="news-main">
+			<div class="news-one">
+				<div class="pic-one">
+					<div class="pic"><img class="lazy" data-original="assets/news_01.jpg" width="200" height="200"></div>
+					<div class="text">
+						<p>2021.4.26</p>
+						<h6>ゴールデンウィーク営業します</h6>
+						<a href="">＞＞詳しくはこちら</a>
+					</div>
+				</div>
+				
+				<div class="pic-two">
+					<div class="pic"><img class="lazy" data-original="assets/news_02.jpg"></div>
+					<div class="text">
+						<p>2021.4.26</p>
+						<h6>ゴールデンウィーク営業します</h6>
+						<a href="">＞＞詳しくはこちら</a>
+			　	</div>
+				</div>
+			</div>
+
+			<div class="news-two">
+				<div class="pic-one">
+					<div class="pic"><img class="lazy" data-original="assets/news_01.jpg"></div>
+					<div class="text">
+						<p>2021.4.26</p>
+						<h6>ゴールデンウィーク営業します</h6>
+						<a href="">＞＞詳しくはこちら</a>
+					</div>
+				</div>
+				
+				<div class="pic-two">
+					<div class="pic"><img class="lazy" data-original="assets/news_02.jpg"></div>
+					<div class="text">
+						<p>2021.4.26</p>
+						<h6>ゴールデンウィーク営業します</h6>
+						<a href="">＞＞詳しくはこちら</a>
+			　	</div>
+				</div>
+			</div>
+
+			<div class="more"><a href="">＞＞MORE</a></div>
+
+		</div>
+	</div>
+	
+	<div class="map-wrapper down-to-top">
+		<div class="map-top">
+			<h2 id="shopinfo">店舗情報</h2>
+			<h5>shop info</h5>
+		</div>
+
+		<div class="mapbox">
+			<div class="mapimg-box">
+				<iframe class="mapimg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.3972941527454!2d135.58626751482552!3d34.21287271669618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007276ee52ad155%3A0x623fab89280d4d62!2z5aSn6LC355Sf6Iqx5bqX!5e0!3m2!1sja!2sjp!4v1621786573697!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<div class="textbox">
+				<ul class="text-left">
+					<li>住所</li>
+					<li class="hoge">電話番号</li>
+					<li>営業時間</li>
+					<li>定休日</li>
+				</ul>
+
+				<ul class="text-right">
+					<li>〒648-0211</li>
+					<li>和歌山県伊都郡高野町高野山728</li>
+					<li>☎︎0736-56-2612</li>
+					<li>AM8:30 - PM5:00</li>
+					<li>月曜日</li>
+				</ul>
+			</div>
+		</div>
+		<footer>©️ Otaniseikaten, All Right Reserved.</footer>
+	</div>
+
+	<script src="hum.js"></script>
+
+	</body>
+</html>
