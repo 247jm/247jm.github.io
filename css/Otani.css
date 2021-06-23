@@ -1,0 +1,609 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 960px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#about, #news, #shopinfo {
+  padding-top: 170px;
+  margin-top: -100px;
+}
+
+#service {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+header .header-contents {
+  width: 100%;
+  height: 110px;
+  margin: -130px auto;
+  position: fixed;
+  z-index: 2000;
+}
+
+header .header-contents::after {
+  position: absolute;
+  z-index: 10;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 40px);
+  background-color: #fff;
+  content: '';
+}
+
+header .header-contents .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 1000;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header .header-left {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 20;
+}
+
+header .header-left img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-right {
+  display: block;
+  position: relative;
+  width: 80%;
+  z-index: 20;
+}
+
+header .header-right > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  margin: 0;
+}
+
+header .header-right > ul > li {
+  display: block;
+}
+
+header .header-right > ul > li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+/* ハンバーガーアイコン */
+.menu-trigger {
+  position: absolute;
+  z-index: 2001;
+  right: 0;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  width: 50px;
+  height: 24px;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  display: block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-trigger > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu-trigger > span:nth-of-type(1) {
+  top: 0px;
+}
+
+.menu-trigger > span:nth-of-type(2) {
+  top: 11px;
+}
+
+.menu-trigger > span:nth-of-type(3) {
+  bottom: 0px;
+}
+
+.menu-trigger.active > span:nth-of-type(1) {
+  -webkit-transform: translateY(11px) rotate(-45deg);
+          transform: translateY(11px) rotate(-45deg);
+}
+
+.menu-trigger.active > span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active > span:nth-of-type(3) {
+  -webkit-transform: translateY(-11px) rotate(45deg);
+          transform: translateY(-11px) rotate(45deg);
+}
+
+.menu-trigger.active ~ .header-nav {
+  -webkit-transform: translateY(7%);
+          transform: translateY(7%);
+}
+
+.sec_inner .slider {
+  position: relative;
+  width: 100%;
+  margin: 150px auto;
+}
+
+.slick-next {
+  right: 50px !important;
+}
+
+.slick-prev {
+  left: 50px !important;
+}
+
+.slick-arrow {
+  width: initial !important;
+  height: initial !important;
+  z-index: 2 !important;
+}
+
+.slick-arrow:before {
+  font-size: 30px !important;
+}
+
+.about-wrapper {
+  /*background-color: hotpink;*/
+  margin: 100px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.about-wrapper .about-top h2 {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN";
+}
+
+.about-wrapper h5 {
+  font-family: "YuMincho";
+  margin: 0 0 50px 0;
+  /*border-bottom: 5px solid #f1eee3;*/
+  position: relative;
+  display: inline-block;
+}
+
+.about-wrapper h5:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: inline-block;
+  width: 200px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #f1eee3;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+.about-wrapper .about-main, .about-wrapper .about-main-mini {
+  background: url("../assets/about_bg.png") center center no-repeat #ffffff;
+  margin: 20px 0;
+}
+
+.about-wrapper .about-jpn {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 19px;
+  margin: 0;
+}
+
+.about-wrapper .about-eng {
+  font-family: "Hiragino Mincho ProN";
+  font-size: 12px;
+  margin: 0 0 25px 0;
+}
+
+.header-nav {
+  position: absolute;
+  right: -20%;
+  left: -20%;
+  background-color: rgba(255, 255, 255, 0.94);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.header-nav > ul li {
+  text-align: center;
+  margin: 45px 0;
+}
+
+/*下から上にフェードイン*/
+.down-to-top {
+  opacity: 0.1;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.down-to-top.scrollin {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.service-wrapper {
+  display: inline-block;
+  text-align: center;
+  background: #f1eee3;
+  /*url(../assets/wave.png) center;
+  background-repeat: no-repeat;
+  background-size: contain;*/
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /*text-align: center;*/
+}
+
+.service-wrapper .service-top {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.service-wrapper .service-top h2 {
+  margin: 0;
+  padding-top: 50px;
+  font-family: "Hiragino Mincho ProN";
+}
+
+.service-wrapper h5 {
+  position: relative;
+  display: inline-block;
+  font-family: "YuMincho";
+  margin: 0;
+  /*border-bottom: 5px solid #f1eee3;*/
+}
+
+.service-wrapper h5:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: inline-block;
+  width: 200px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: white;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+/*アニメーション*/
+/*.service-wrapper.zoomin.is-animated{
+  animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}*/
+.servicebox {
+  width: 100%;
+  margin: 60px 0;
+  /*text-align: center;*/
+  background: #f1eee3 url(../assets/wave.png) center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service-1, .service-2, .service-3 {
+  display: inline-block;
+  width: 80%;
+  margin: 15px 0;
+  font-family: "Hiragino Mincho ProN";
+}
+
+.service-1 .service1-left, .service-1 .service2-left, .service-1 .service3-left, .service-2 .service1-left, .service-2 .service2-left, .service-2 .service3-left, .service-3 .service1-left, .service-3 .service2-left, .service-3 .service3-left {
+  display: inline-block;
+  /*float: left;*/
+  width: 20%;
+  margin-left: 10%;
+}
+
+.service-1 .service1-right, .service-1 .service2-right, .service-1 .service3-right, .service-2 .service1-right, .service-2 .service2-right, .service-2 .service3-right, .service-3 .service1-right, .service-3 .service2-right, .service-3 .service3-right {
+  float: right;
+  width: 40%;
+  margin-right: 20%;
+  text-align: left;
+}
+
+.service-1 .service1-right h3, .service-1 .service2-right h3, .service-1 .service3-right h3, .service-2 .service1-right h3, .service-2 .service2-right h3, .service-2 .service3-right h3, .service-3 .service1-right h3, .service-3 .service2-right h3, .service-3 .service3-right h3 {
+  margin: 40px 0;
+  text-align: left;
+}
+
+.service-1 .service1-right p, .service-1 .service2-right p, .service-1 .service3-right p, .service-2 .service1-right p, .service-2 .service2-right p, .service-2 .service3-right p, .service-3 .service1-right p, .service-3 .service2-right p, .service-3 .service3-right p {
+  display: inline-block;
+  /*width:230px;*/
+}
+
+.news-wrapper {
+  margin: 100px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.news-wrapper .news-top h2 {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN";
+}
+
+.news-wrapper h5 {
+  font-family: "YuMincho";
+  margin: 0 0 50px 0;
+  /*border-bottom: 5px solid #f1eee3;*/
+  position: relative;
+  display: inline-block;
+}
+
+.news-wrapper h5:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: inline-block;
+  width: 200px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #f1eee3;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+.news-wrapper .news-one, .news-wrapper .news-two {
+  margin: 0 auto;
+}
+
+.news-wrapper .pic-one, .news-wrapper .pic-two {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.news-wrapper .news-one, .news-wrapper .news-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-wrapper .news-one .text, .news-wrapper .news-two .text {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 40px;
+  line-height: 10px;
+  width: 60%;
+}
+
+.news-wrapper .news-one .text p, .news-wrapper .news-two .text p {
+  width: 10%;
+  font-family: Helvetica;
+  color: darkgray;
+}
+
+.news-wrapper .news-one .text h6, .news-wrapper .news-two .text h6 {
+  font-family: ヒラギノ明朝 ProN;
+  font-size: 90%;
+}
+
+.news-wrapper .news-one .text a, .news-wrapper .news-two .text a {
+  font-family: ヒラギノ明朝 ProN;
+  font-size: 80%;
+}
+
+.news-wrapper .more {
+  text-align: right;
+}
+
+.map-wrapper {
+  background-color: #f1eee3;
+  margin: 100px auto;
+  width: 100%;
+  height: 800px;
+  /*text-align: center;*/
+}
+
+.map-wrapper .map-top {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.map-wrapper .map-top h2 {
+  margin: 0;
+  padding-top: 50px;
+  font-family: "Hiragino Mincho ProN";
+}
+
+.map-wrapper h5 {
+  position: relative;
+  display: inline-block;
+  font-family: "YuMincho";
+  margin: 0;
+  /*border-bottom: 5px solid #f1eee3;*/
+}
+
+.map-wrapper h5:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: inline-block;
+  width: 200px;
+  height: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: white;
+  /*線の色*/
+  border-radius: 2px;
+  /*線の丸み*/
+}
+
+.map-wrapper .mapbox {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Hiragino Mincho ProN";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map-wrapper .mapbox .mapimg-box {
+  margin: 0 auto;
+}
+
+.map-wrapper .mapbox .mapimg {
+  margin-top: 10px auto;
+  padding: 11px;
+  width: 400px;
+  height: 400px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 3px 18px -4px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 3px 18px -4px rgba(0, 0, 0, 0.8);
+}
+
+.map-wrapper .mapbox .textbox {
+  /*width:500px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.map-wrapper .mapbox .textbox li {
+  line-height: 60px;
+}
+
+.map-wrapper .mapbox .textbox .text-left {
+  /*margin-left: -80px;*/
+}
+
+.map-wrapper .mapbox .textbox .text-left .hoge {
+  margin-top: 3.8em;
+}
+
+.map-wrapper .mapbox .textbox .text-right {
+  margin-left: 20px;
+}
+
+.map-wrapper footer {
+  text-align: center;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=Otani.css.map */
