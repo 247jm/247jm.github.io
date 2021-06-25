@@ -120,6 +120,10 @@
     content: '←';
 }
 
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;/*少し大きくする*/
+}
+
 /* Dots */
 .slick-dotted.slick-slider
 {
