@@ -201,10 +201,6 @@ header .header-right > ul > li:not(:last-of-type) {
   z-index: 2 !important;
 }
 
-/* .slick-arrow:before {
-  font-size: 30px !important;
-}*/
-
 .about-wrapper {
   /*background-color: hotpink;*/
   margin: 100px auto;
