@@ -196,14 +196,14 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .slick-arrow {
-  width: initial !important;
-  height: initial !important;
+/*   width: initial !important;
+  height: initial !important; */
   z-index: 2 !important;
 }
 
-.slick-arrow:before {
+/* .slick-arrow:before {
   font-size: 30px !important;
-}
+}*/
 
 .about-wrapper {
   /*background-color: hotpink;*/
