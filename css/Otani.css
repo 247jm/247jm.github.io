@@ -121,7 +121,7 @@ header .header-right > ul > li:not(:last-of-type) {
 .menu-trigger {
   position: absolute;
   z-index: 2001;
-  right: 108px;
+  right: 100px;
   -webkit-transform: translateY(-110%);
   transform: translateY(-110%);
   width: 100px;
