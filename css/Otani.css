@@ -276,7 +276,27 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .header-nav > ul li {
   text-align: center;
-  margin: 45px 0;
+  margin: 40px 0;
+}
+
+.header-nav > ul li > a > img.nav-a {
+  width: 150px;
+}
+
+.header-nav > ul li > a > img.nav-s {
+  width: 146px;
+}
+
+.header-nav > ul li > a > img.nav-n {
+  width: 84px;
+}
+
+.header-nav > ul li > a > img.nav-i {
+  width: 85px;
+}
+
+.header-nav > ul li > a > img.nav-insta {
+  width: 100px;
 }
 
 /*下から上にフェードイン*/
