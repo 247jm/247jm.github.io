@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 780px) {
   body {
     min-width: auto;
@@ -13,7 +14,19 @@
   }
 }
 
-@media (min-width: 780px) {
+@media (max-width: 1240px) {
+  body {
+    min-width: auto;
+  }
+  header .header-right {
+    display: none;
+  }
+  .about-main {
+    display: none;
+  }
+}
+
+@media (min-width: 1240px) {
   .header-nav > ul li {
     display: none;
   }
@@ -25,9 +38,10 @@
   }
 }
 
-@media (max-width: 1100px) {
-  .slider img {
-    width: 900px;
+@media (max-width: 1240px) {
+  .slick-prev:before, .slick-next:before {
+    font-size: 80px;
+    /*少し大きくする*/
   }
   .service-1,
   .service-2,
@@ -74,6 +88,7 @@
   .service-3 .service3-right h3 {
     margin: 0 auto;
     text-align: center;
+    font-size: 20px;
   }
   .service-1 .service1-right p,
   .service-1 .service2-right p,
@@ -86,6 +101,7 @@
   .service-3 .service3-right p {
     display: block;
     margin-bottom: 50px;
+    font-size: 18px;
   }
   .news-two > .pic-one,
   .news-two .pic,
@@ -117,11 +133,17 @@
 		}*/
   }
   .map-wrapper {
-    height: 1100px;
+    height: 900px;
     margin: 10px auto;
   }
   .map-wrapper .textbox {
     margin: 0 auto;
+  }
+  .map-wrapper .textbox > ul > li {
+    font-size: 20px;
+  }
+  .map-wrapper .mapbox .textbox .text-left .hoge {
+    margin-top: 3.1em;
   }
   .map-wrapper .mapbox {
     font-size: 15px;
