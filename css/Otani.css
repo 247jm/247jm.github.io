@@ -113,15 +113,35 @@ header .header-right > ul > li {
   display: block;
 }
 
+header .header-right > ul > li > a > img.nav-a {
+  width: 140px;
+}
+
+header .header-right > ul > li > a > img.nav-s {
+  width: 136px;
+}
+
+header .header-right > ul > li > a > img.nav-n {
+  width: 74px;
+}
+
+header .header-right > ul > li > a > img.nav-i {
+  width: 75px;
+}
+
+header .header-right > ul > li > a > img.nav-insta {
+  width: 90px;
+}
+
 header .header-right > ul > li:not(:last-of-type) {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 /* ハンバーガーアイコン */
 .menu-trigger {
   position: absolute;
   z-index: 2001;
-  right: 100px;
+  right: 8%;
   -webkit-transform: translateY(-110%);
   transform: translateY(-110%);
   width: 100px;
@@ -145,7 +165,7 @@ header .header-right > ul > li:not(:last-of-type) {
   right: 0;
   margin: 0 auto;
   width: 60%;
-  height: 3px;
+  height: 5px;
   background-color: #000;
   border-radius: 4px;
   display: inline-block;
@@ -160,7 +180,7 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .menu-trigger > span:nth-of-type(2) {
-  top: 24px;
+  top: 22px;
 }
 
 .menu-trigger > span:nth-of-type(3) {
@@ -168,8 +188,8 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .menu-trigger.active > span:nth-of-type(1) {
-  -webkit-transform: translateY(22px) rotate(-45deg);
-  transform: translateY(22px) rotate(-45deg);
+  -webkit-transform: translateY(21px) rotate(-45deg);
+  transform: translateY(21px) rotate(-45deg);
 }
 
 .menu-trigger.active > span:nth-of-type(2) {
@@ -177,8 +197,8 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .menu-trigger.active > span:nth-of-type(3) {
-  -webkit-transform: translateY(-22px) rotate(45deg);
-  transform: translateY(-22px) rotate(45deg);
+  -webkit-transform: translateY(-21px) rotate(45deg);
+  transform: translateY(-21px) rotate(45deg);
 }
 
 .menu-trigger.active ~ .header-nav {
@@ -215,12 +235,12 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .about-wrapper .about-top h2 {
   margin: 0;
-  font-size: 200%;
+  font-size: 250%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .about-wrapper h5 {
-  font-size: 150%;
+  font-size: 200%;
   font-family: "YuMincho";
   margin: 0 0 50px 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -252,13 +272,13 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .about-wrapper .about-jpn {
   font-family: "Hiragino Mincho ProN";
-  font-size: 19px;
+  font-size: 25px;
   margin: 0;
 }
 
 .about-wrapper .about-eng {
   font-family: "Hiragino Mincho ProN";
-  font-size: 12px;
+  font-size: 20px;
   margin: 0 0 25px 0;
 }
 
@@ -335,14 +355,14 @@ header .header-right > ul > li:not(:last-of-type) {
 .service-wrapper .service-top h2 {
   margin: 0;
   padding-top: 50px;
-  font-size: 220%;
+  font-size: 250%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .service-wrapper h5 {
   position: relative;
   display: inline-block;
-  font-size: 150%;
+  font-size: 200%;
   font-family: "YuMincho";
   margin: 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -365,22 +385,6 @@ header .header-right > ul > li:not(:last-of-type) {
   /*線の丸み*/
 }
 
-/*アニメーション*/
-/*.service-wrapper.zoomin.is-animated{
-  animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
-}
-
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}*/
 .servicebox {
   width: 100%;
   margin: 60px 0;
@@ -412,12 +416,14 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .service-1 .service1-right h3, .service-1 .service2-right h3, .service-1 .service3-right h3, .service-2 .service1-right h3, .service-2 .service2-right h3, .service-2 .service3-right h3, .service-3 .service1-right h3, .service-3 .service2-right h3, .service-3 .service3-right h3 {
-  margin: 40px 0;
+  margin: 5px 0;
   text-align: left;
+  font-size: 30px;
 }
 
 .service-1 .service1-right p, .service-1 .service2-right p, .service-1 .service3-right p, .service-2 .service1-right p, .service-2 .service2-right p, .service-2 .service3-right p, .service-3 .service1-right p, .service-3 .service2-right p, .service-3 .service3-right p {
   display: inline-block;
+  font-size: 25px;
   /*width:230px;*/
 }
 
@@ -429,12 +435,12 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .news-wrapper .news-top h2 {
   margin: 0;
-  font-size: 200%;
+  font-size: 250%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .news-wrapper h5 {
-  font-size: 150%;
+  font-size: 200%;
   font-family: "YuMincho";
   margin: 0 0 50px 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -510,12 +516,12 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .news-wrapper .news-one .text h6, .news-wrapper .news-two .text h6 {
   font-family: ヒラギノ明朝 ProN;
-  font-size: 130%;
+  font-size: 138%;
 }
 
 .news-wrapper .news-one .text a, .news-wrapper .news-two .text a {
   font-family: ヒラギノ明朝 ProN;
-  font-size: 130%;
+  font-size: 135%;
 }
 
 .news-wrapper .more {
@@ -542,14 +548,14 @@ header .header-right > ul > li:not(:last-of-type) {
 .map-wrapper .map-top h2 {
   margin: 0;
   padding-top: 50px;
-  font-size: 200%;
+  font-size: 250%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .map-wrapper h5 {
   position: relative;
   display: inline-block;
-  font-size: 150%;
+  font-size: 200%;
   font-family: "YuMincho";
   margin: 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -622,10 +628,11 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .map-wrapper .mapbox .textbox li {
   line-height: 60px;
+  font-size: 25px;
 }
 
 .map-wrapper .mapbox .textbox .text-left .hoge {
-  margin-top: 3.8em;
+  margin-top: 2.5em;
 }
 
 .map-wrapper .mapbox .textbox .text-right {
