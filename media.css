@@ -88,7 +88,7 @@
   .service-3 .service3-right h3 {
     margin: 0 auto;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
   }
   .service-1 .service1-right p,
   .service-1 .service2-right p,
@@ -101,7 +101,7 @@
   .service-3 .service3-right p {
     display: block;
     margin-bottom: 50px;
-    font-size: 18px;
+    font-size: 25px;
   }
   .news-two > .pic-one,
   .news-two .pic,
@@ -133,20 +133,17 @@
 		}*/
   }
   .map-wrapper {
-    height: 900px;
+    height: 1100px;
     margin: 10px auto;
   }
   .map-wrapper .textbox {
     margin: 0 auto;
   }
   .map-wrapper .textbox > ul > li {
-    font-size: 20px;
+    font-size: 25px;
   }
   .map-wrapper .mapbox .textbox .text-left .hoge {
-    margin-top: 3.1em;
-  }
-  .map-wrapper .mapbox {
-    font-size: 15px;
+    margin-top: 2.5em;
   }
   footer {
     margin-top: 50px;
