@@ -47,8 +47,8 @@ header .header-contents .header-box {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   z-index: 1000;
   width: 80%;
   margin: 0 auto;
@@ -66,21 +66,26 @@ header a {
 header .header-left {
   display: block;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   z-index: 20;
 }
 
+header .header-left > p {
+  font-size: 20px;
+}
+
 header .header-left img {
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .header-right {
@@ -95,11 +100,11 @@ header .header-right > ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   height: 100%;
   margin: 0;
 }
@@ -116,22 +121,22 @@ header .header-right > ul > li:not(:last-of-type) {
 .menu-trigger {
   position: absolute;
   z-index: 2001;
-  right: 0;
+  right: 150px;
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
-  width: 50px;
-  height: 24px;
+  transform: translateY(-110%);
+  width: 100px;
+  height: 48px;
   background: none;
   border: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
   display: block;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .menu-trigger > span {
@@ -140,14 +145,14 @@ header .header-right > ul > li:not(:last-of-type) {
   right: 0;
   margin: 0 auto;
   width: 60%;
-  height: 2px;
+  height: 3px;
   background-color: #000;
   border-radius: 4px;
   display: inline-block;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .menu-trigger > span:nth-of-type(1) {
@@ -155,7 +160,7 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .menu-trigger > span:nth-of-type(2) {
-  top: 11px;
+  top: 24px;
 }
 
 .menu-trigger > span:nth-of-type(3) {
@@ -163,8 +168,8 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .menu-trigger.active > span:nth-of-type(1) {
-  -webkit-transform: translateY(11px) rotate(-45deg);
-          transform: translateY(11px) rotate(-45deg);
+  -webkit-transform: translateY(22px) rotate(-45deg);
+  transform: translateY(22px) rotate(-45deg);
 }
 
 .menu-trigger.active > span:nth-of-type(2) {
@@ -172,13 +177,13 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .menu-trigger.active > span:nth-of-type(3) {
-  -webkit-transform: translateY(-11px) rotate(45deg);
-          transform: translateY(-11px) rotate(45deg);
+  -webkit-transform: translateY(-22px) rotate(45deg);
+  transform: translateY(-22px) rotate(45deg);
 }
 
 .menu-trigger.active ~ .header-nav {
-  -webkit-transform: translateY(7%);
-          transform: translateY(7%);
+  -webkit-transform: translateY(2%);
+  transform: translateY(2%);
 }
 
 .sec_inner .slider {
@@ -196,7 +201,7 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .slick-arrow {
-/*   width: initial !important;
+  /*   width: initial !important;
   height: initial !important; */
   z-index: 2 !important;
 }
@@ -210,10 +215,12 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .about-wrapper .about-top h2 {
   margin: 0;
+  font-size: 200%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .about-wrapper h5 {
+  font-size: 150%;
   font-family: "YuMincho";
   margin: 0 0 50px 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -261,7 +268,7 @@ header .header-right > ul > li:not(:last-of-type) {
   left: -20%;
   background-color: rgba(255, 255, 255, 0.94);
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  transform: translateY(-110%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 10;
@@ -276,7 +283,7 @@ header .header-right > ul > li:not(:last-of-type) {
 .down-to-top {
   opacity: 0.1;
   -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -284,7 +291,7 @@ header .header-right > ul > li:not(:last-of-type) {
 .down-to-top.scrollin {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .service-wrapper {
@@ -308,12 +315,14 @@ header .header-right > ul > li:not(:last-of-type) {
 .service-wrapper .service-top h2 {
   margin: 0;
   padding-top: 50px;
+  font-size: 200%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .service-wrapper h5 {
   position: relative;
   display: inline-block;
+  font-size: 150%;
   font-family: "YuMincho";
   margin: 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -400,10 +409,12 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .news-wrapper .news-top h2 {
   margin: 0;
+  font-size: 200%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .news-wrapper h5 {
+  font-size: 150%;
   font-family: "YuMincho";
   margin: 0 0 50px 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -439,13 +450,13 @@ header .header-right > ul > li:not(:last-of-type) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .news-wrapper .news-one, .news-wrapper .news-two {
@@ -454,12 +465,12 @@ header .header-right > ul > li:not(:last-of-type) {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .news-wrapper .news-one .text, .news-wrapper .news-two .text {
@@ -507,12 +518,14 @@ header .header-right > ul > li:not(:last-of-type) {
 .map-wrapper .map-top h2 {
   margin: 0;
   padding-top: 50px;
+  font-size: 200%;
   font-family: "Hiragino Mincho ProN";
 }
 
 .map-wrapper h5 {
   position: relative;
   display: inline-block;
+  font-size: 150%;
   font-family: "YuMincho";
   margin: 0;
   /*border-bottom: 5px solid #f1eee3;*/
@@ -543,15 +556,15 @@ header .header-right > ul > li:not(:last-of-type) {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 50px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .map-wrapper .mapbox .mapimg-box {
@@ -565,7 +578,7 @@ header .header-right > ul > li:not(:last-of-type) {
   height: 400px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 3px 18px -4px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 3px 18px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 18px -4px rgba(0, 0, 0, 0.8);
 }
 
 .map-wrapper .mapbox .textbox {
@@ -576,19 +589,15 @@ header .header-right > ul > li:not(:last-of-type) {
   margin: 50px auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .map-wrapper .mapbox .textbox li {
   line-height: 60px;
-}
-
-.map-wrapper .mapbox .textbox .text-left {
-  /*margin-left: -80px;*/
 }
 
 .map-wrapper .mapbox .textbox .text-left .hoge {
