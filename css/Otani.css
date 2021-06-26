@@ -517,12 +517,12 @@ header .header-right > ul > li:not(:last-of-type) {
 
 .news-wrapper .news-one .text h6, .news-wrapper .news-two .text h6 {
   font-family: ヒラギノ明朝 ProN;
-  font-size: 138%;
+  font-size: 155%;
 }
 
 .news-wrapper .news-one .text a, .news-wrapper .news-two .text a {
   font-family: ヒラギノ明朝 ProN;
-  font-size: 135%;
+  font-size: 140%;
 }
 
 .news-wrapper .more {
@@ -530,7 +530,7 @@ header .header-right > ul > li:not(:last-of-type) {
 }
 
 .news-wrapper .more > a {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .map-wrapper {
